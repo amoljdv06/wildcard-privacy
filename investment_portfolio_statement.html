@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investment Portfolio Performance Statement</title>
+<style>
+:root{
+  --bg:#f4f7fb;--card:#fff;--ink:#162033;--muted:#718096;--line:#e7ecf3;
+  --blue:#2563eb;--green:#059669;--red:#dc2626;--gold:#c58a16;--purple:#7c3aed;
+}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:1400px;margin:auto;padding:28px}
+.hero{background:linear-gradient(135deg,#13213c,#1d4ed8);color:#fff;border-radius:22px;padding:30px 34px;box-shadow:0 18px 45px rgba(20,40,90,.18)}
+.hero h1{margin:0 0 8px;font-size:28px}.hero p{margin:0;color:#dbeafe}.meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}.pill{background:rgba(255,255,255,.13);padding:8px 12px;border-radius:999px;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin:20px 0}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 8px 24px rgba(30,50,80,.05)}
+.label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700}.value{font-size:27px;font-weight:800;margin:8px 0}.sub{font-size:13px;color:var(--muted)}.pos{color:var(--green)}.neg{color:var(--red)}
+.section{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;margin:18px 0}.section h2{font-size:19px;margin:0 0 16px}.summary{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
+.barrow{margin:14px 0}.barhead{display:flex;justify-content:space-between;font-size:14px;margin-bottom:7px}.bar{height:12px;background:#edf1f7;border-radius:99px;overflow:hidden}.fill{height:100%;border-radius:99px}
+.stock{background:#ef4444}.mf{background:#2563eb}.sgb{background:#c58a16}
+table{width:100%;border-collapse:collapse;font-size:13px}th{background:#f8fafc;text-align:right;padding:11px;border-bottom:1px solid var(--line);color:#64748b}td{padding:11px;border-bottom:1px solid var(--line);text-align:right}th:first-child,td:first-child{text-align:left}.group{font-weight:800;color:#334155;background:#fbfcfe}.highlight{background:#f0fdf4;font-weight:800}.note{background:#fffbeb;border-left:4px solid #d97706;padding:14px 16px;border-radius:8px;color:#78350f;font-size:13px}
+.footer{color:#718096;font-size:12px;text-align:center;padding:18px}
+@media(max-width:950px){.grid{grid-template-columns:repeat(2,1fr)}.summary{grid-template-columns:1fr}.wrap{padding:14px}.section{overflow:auto}}
+@media(max-width:550px){.grid{grid-template-columns:1fr}.hero{padding:24px}.value{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <h1>Investment Portfolio Performance Statement</h1>
+    <p>Consolidated view of Equity, Mutual Fund and Sovereign Gold Bond investments</p><p style="margin-top:10px;color:#dbeafe;font-size:15px"><b>Portfolio Holder:</b> आत्माराम बाळू जाधव</p><p style="margin-top:10px;color:#ffffff;font-size:16px;font-weight:700">Investor: Atmaram Balu Jadhav</p>
+    <div class="meta">
+      <span class="pill">Statement Date: 25 Aug 2026</span>
+      <span class="pill">Currency: INR (₹)</span>
+      <span class="pill">Mutual Fund Period: 15 Aug 2024 – 15 Aug 2026</span>
+    </div>
+  </header>
+
+  <section class="grid">
+    <div class="card"><div class="label">Total Invested</div><div class="value">₹1,38,643.26</div><div class="sub">Cost basis across all instruments</div></div>
+    <div class="card"><div class="label">Current Portfolio Value</div><div class="value">₹2,02,780.73</div><div class="sub">Based on supplied latest values</div></div>
+    <div class="card"><div class="label">Total Net Return</div><div class="value pos">+₹64,137.47</div><div class="sub">Absolute profit</div></div>
+    <div class="card"><div class="label">Portfolio Return</div><div class="value pos">+46.26%</div><div class="sub">Absolute return on invested capital</div></div>
+    <div class="card"><div class="label">Annualized Return*</div><div class="value pos">+20.92%</div><div class="sub">2-year CAGR-equivalent return</div></div>
+  </section>
+
+  <section class="section summary">
+    <div>
+      <h2>Asset Allocation & Contribution</h2>
+      <div class="barrow"><div class="barhead"><span>Mutual Funds</span><b>₹96,668.68 current value · +₹16,671.82</b></div><div class="bar"><div class="fill mf" style="width:47.67%"></div></div></div>
+      <div class="barrow"><div class="barhead"><span>Sovereign Gold Bond</span><b>₹81,675.00 current value · +₹50,610.00</b></div><div class="bar"><div class="fill sgb" style="width:40.28%"></div></div></div>
+      <div class="barrow"><div class="barhead"><span>Direct Stocks</span><b>₹24,437.05 current value · -₹3,144.35</b></div><div class="bar"><div class="fill stock" style="width:12.05%"></div></div></div>
+    </div>
+    <div>
+      <h2>Performance Snapshot</h2>
+      <table>
+        <tr><th>Category</th><th>Invested</th><th>Current</th><th>Return</th></tr>
+        <tr><td>Direct Stocks</td><td>₹27,581.40</td><td>₹24,437.05</td><td class="neg">-11.40%</td></tr>
+        <tr><td>Mutual Funds</td><td>₹79,996.86</td><td>₹96,668.68</td><td class="pos">+20.84%</td></tr>
+        <tr><td>Sovereign Gold Bond</td><td>₹31,065.00</td><td>₹81,675.00</td><td class="pos">+162.92%</td></tr>
+        <tr class="highlight"><td>Total Portfolio</td><td>₹1,38,643.26</td><td>₹2,02,780.73</td><td class="pos">+46.26%</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Direct Equity Holdings</h2>
+    <table>
+      <tr><th>Instrument</th><th>Invested</th><th>Current Value</th><th>P&amp;L</th><th>Return</th></tr>
+      <tr><td>COALINDIA</td><td>₹10,074.00</td><td>₹8,080.00</td><td class="neg">-₹1,994.00</td><td class="neg">-19.79%</td></tr>
+      <tr><td>SUZLON</td><td>₹7,603.15</td><td>₹7,059.25</td><td class="neg">-₹543.90</td><td class="neg">-7.15%</td></tr>
+      <tr><td>TATAPOWER</td><td>₹6,588.25</td><td>₹5,559.00</td><td class="neg">-₹1,029.25</td><td class="neg">-15.62%</td></tr>
+      <tr><td>TATASTEEL</td><td>₹3,316.00</td><td>₹3,738.80</td><td class="pos">+₹422.80</td><td class="pos">+12.75%</td></tr>
+      <tr class="group"><td>Stock Total</td><td>₹27,581.40</td><td>₹24,437.05</td><td class="neg">-₹3,144.35</td><td class="neg">-11.40%</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>Mutual Fund Investments</h2>
+    <table>
+      <tr><th>Fund</th><th>Invested</th><th>Current Value</th><th>P&amp;L</th><th>Return</th></tr>
+      <tr><td>ICICI Prudential Multi Asset Fund</td><td>₹9,999.29</td><td>₹12,189.30</td><td class="pos">+₹2,190.01</td><td class="pos">+21.90%</td></tr>
+      <tr><td>Mirae Asset ELSS Tax Saver Fund</td><td>₹9,999.51</td><td>₹11,989.25</td><td class="pos">+₹1,989.74</td><td class="pos">+19.90%</td></tr>
+      <tr><td>Mirae Asset Midcap Fund</td><td>₹19,999.01</td><td>₹25,598.26</td><td class="pos">+₹5,599.25</td><td class="pos">+28.00%</td></tr>
+      <tr><td>Parag Parikh Flexi Cap Fund</td><td>₹19,999.00</td><td>₹23,139.57</td><td class="pos">+₹3,140.57</td><td class="pos">+15.70%</td></tr>
+      <tr><td>Quant Multi Asset Allocation Fund</td><td>₹9,999.52</td><td>₹13,036.33</td><td class="pos">+₹3,036.82</td><td class="pos">+30.37%</td></tr>
+      <tr><td>Tata Nifty 50 Index Fund</td><td>₹9,999.53</td><td>₹10,715.97</td><td class="pos">+₹716.44</td><td class="pos">+7.16%</td></tr>
+      <tr class="group"><td>Mutual Fund Total</td><td>₹79,996.86</td><td>₹96,668.68</td><td class="pos">+₹16,671.82</td><td class="pos">+20.84%</td></tr>
+    </table>
+    <p class="note"><b>Period performance:</b> Mutual fund holdings are stated for the period 15 Aug 2024 to 15 Aug 2026. The combined absolute return is 20.84%. If treated as a two-year lump-sum-equivalent performance, the approximate annualized CAGR is 9.93%; actual XIRR may differ because individual cash-flow dates are not provided.</p>
+  </section>
+
+  <section class="section">
+    <h2>Sovereign Gold Bond (SGB)</h2>
+    <table>
+      <tr><th>Holding</th><th>Qty.</th><th>Purchase / Unit</th><th>Current / Unit</th><th>Invested</th><th>Current Value</th><th>P&amp;L</th><th>Return</th></tr>
+      <tr><td>S Gold Bond</td><td>5 units</td><td>₹6,213.00</td><td>₹16,335.00</td><td>₹31,065.00</td><td>₹81,675.00</td><td class="pos">+₹50,610.00</td><td class="pos">+162.92%</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>Final Investment Statement</h2>
+    <table>
+      <tr><th>Metric</th><th>Amount</th></tr>
+      <tr><td>Total Capital Invested</td><td>₹1,38,643.26</td></tr>
+      <tr><td>Total Current Portfolio Value</td><td>₹2,02,780.73</td></tr>
+      <tr><td>Total Unrealized / Mark-to-Market Gain</td><td class="pos">+₹64,137.47</td></tr>
+      <tr><td>Overall Absolute Return</td><td class="pos">+46.26%</td></tr>
+      <tr><td>Annualized Return*</td><td class="pos">+20.92% per annum</td></tr>
+      <tr class="highlight"><td>Portfolio Status</td><td class="pos">Overall profitable and positive</td></tr>
+    </table>
+  </section>
+</div>
+</body>
+</html>
